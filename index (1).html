@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Cognitive Profile Lab — 종합 인지검사</title>
+<style>
+:root{--bg:#07090d;--panel:#0d1118;--panel2:#121824;--text:#f3f6fb;--muted:#9ba8ba;--line:#202a39;--accent:#7c9cff;--accent2:#80e1c1;--danger:#ff7c8c;--warn:#ffd37c;--shadow:0 22px 70px rgba(0,0,0,.28)}
+*{box-sizing:border-box} body{margin:0;background:radial-gradient(1000px 650px at 75% -10%,#142144 0%,transparent 55%),var(--bg);color:var(--text);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}button,input,select{font:inherit}.wrap{max-width:1080px;margin:0 auto;padding:24px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}.brand{display:flex;align-items:center;gap:12px}.mark{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,var(--accent),#a487ff);display:grid;place-items:center;font-weight:900;color:#07111e;box-shadow:0 8px 24px rgba(124,156,255,.35)}.brand b{font-size:15px}.brand small{display:block;color:var(--muted);font-size:11px}.pill{border:1px solid var(--line);background:rgba(12,16,23,.7);padding:8px 11px;border-radius:999px;color:var(--muted);font-size:12px}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:18px}.card{background:linear-gradient(180deg,rgba(18,24,36,.92),rgba(11,15,22,.94));border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}.heroMain{padding:34px}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#cdd6e7;font-size:12px;border:1px solid var(--line);border-radius:999px;padding:7px 10px;background:#0a0e15}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent2);box-shadow:0 0 16px var(--accent2)}h1{font-size:clamp(35px,6vw,64px);line-height:.98;letter-spacing:-.055em;margin:20px 0 16px}.grad{background:linear-gradient(90deg,#fff 0,#9eb4ff 52%,#a5f1da 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:17px;color:#c1c9d6;max-width:740px}.notice{margin-top:22px;padding:14px 15px;border-left:3px solid var(--warn);background:rgba(255,211,124,.06);border-radius:12px;color:#d5d9e3;font-size:13px}.side{padding:22px}.metric{padding:16px;border:1px solid var(--line);border-radius:16px;background:#0a0e15;margin-bottom:10px}.metric strong{display:block;font-size:23px;letter-spacing:-.03em}.metric span{color:var(--muted);font-size:12px}.formrow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.field label{display:block;color:var(--muted);font-size:12px;margin-bottom:7px}.field input,.field select{width:100%;background:#090d14;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:12px 13px;outline:none}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.btn{border:0;border-radius:13px;padding:12px 16px;font-weight:800;cursor:pointer;transition:.18s transform,.18s opacity,.18s background}.btn:hover{transform:translateY(-1px)}.btn.primary{background:linear-gradient(135deg,var(--accent),#9c85ff);color:#07101e}.btn.secondary{background:#111725;color:#dce4f3;border:1px solid var(--line)}.btn.ghost{background:transparent;color:#b8c2d0;border:1px solid var(--line)}.btn:disabled{opacity:.4;cursor:not-allowed;transform:none}.hidden{display:none!important}.section{margin-top:20px}.sectionHead{display:flex;justify-content:space-between;gap:16px;align-items:end;margin:20px 2px 12px}.sectionHead h2{margin:0;font-size:22px;letter-spacing:-.03em}.sectionHead p{margin:0;color:var(--muted);font-size:12px}.battery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.testCard{padding:16px;display:flex;gap:14px;align-items:center}.testIcon{width:44px;height:44px;border-radius:14px;background:#111827;border:1px solid #28344a;display:grid;place-items:center;font-weight:900;color:#bfd0ff;flex:none}.testMeta{min-width:0;flex:1}.testMeta b{display:block}.testMeta small{color:var(--muted)}.status{font-size:11px;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:5px 8px}.status.done{color:#a6f0d8;border-color:#245746;background:#0e251f}.status.now{color:#d9e1ff;border-color:#42589a;background:#111a39}.progressbar{height:8px;border-radius:999px;background:#111724;overflow:hidden;border:1px solid #20293a}.progressbar>div{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));width:0%}.testShell{max-width:840px;margin:0 auto}.testHeader{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}.indexBadge{color:#aeb9ca;font-size:12px}.timer{font-variant-numeric:tabular-nums;color:#cdd7e8;background:#0d131e;border:1px solid var(--line);padding:7px 10px;border-radius:10px}.questionCard{padding:28px;min-height:430px;display:flex;flex-direction:column;justify-content:center}.questionCard h2{font-size:28px;letter-spacing:-.03em;margin:0 0 8px}.questionCard p{color:#b9c3d1}.prompt{font-size:22px;font-weight:800;margin:26px 0 22px;white-space:pre-wrap}.options{display:grid;gap:10px}.option{width:100%;text-align:left;border:1px solid #28334a;background:#0b1019;color:#eef3fb;border-radius:14px;padding:14px 16px;cursor:pointer}.option:hover{border-color:#536baf;background:#10182a}.option.selected{border-color:#7c9cff;background:#121c38}.matrixGrid{display:grid;grid-template-columns:repeat(3,86px);gap:7px;justify-content:center;margin:22px auto}.cell{width:86px;height:86px;border-radius:12px;border:1px solid #303c55;background:#0c111a;display:grid;place-items:center;font-size:30px;font-weight:900}.blockGrid{display:grid;grid-template-columns:repeat(4,46px);gap:4px;justify-content:center;margin:20px auto}.blockCell{width:46px;height:46px;border-radius:6px;background:#182236;border:1px solid #2b3954}.blockCell.on{background:#8ba4ff}.memoryStage{display:grid;place-items:center;min-height:250px}.memoryToken{font-size:56px;font-weight:900;letter-spacing:.08em}.memoryInput{width:100%;max-width:420px;margin:18px auto 0;background:#080c12;border:1px solid var(--line);color:#fff;border-radius:14px;padding:14px;text-align:center;font-size:25px;letter-spacing:.12em}.spatialBoard{display:grid;grid-template-columns:repeat(4,64px);gap:9px;justify-content:center}.spatialDot{width:64px;height:64px;border-radius:14px;background:#101726;border:1px solid #28334a;transition:.12s}.spatialDot.flash{background:#a6b8ff;box-shadow:0 0 28px rgba(140,163,255,.45)}.symbolRow{display:grid;grid-template-columns:90px 1fr 90px;gap:14px;align-items:center;padding:13px;border-bottom:1px solid #1d2636}.symbols{font-size:24px;letter-spacing:.18em;white-space:nowrap}.yesno{display:flex;gap:7px}.yesno button{flex:1}.codingKey{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin:16px 0}.keyitem{padding:9px;border:1px solid #2c3850;border-radius:11px;text-align:center;background:#0d131e}.codePrompt{font-size:32px;text-align:center;margin:22px 0}.reportGrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:14px}.reportCard{padding:20px}.scoreHero{font-size:72px;line-height:1;font-weight:900;letter-spacing:-.06em}.scoreSub{color:var(--muted)}.indexRows{display:grid;gap:9px}.indexRow{display:grid;grid-template-columns:130px 1fr 52px;gap:10px;align-items:center}.miniBar{height:10px;background:#111827;border-radius:999px;overflow:hidden}.miniBar i{display:block;height:100%;background:linear-gradient(90deg,#7899ff,#7be0c1);border-radius:999px}.disclaimer{font-size:12px;color:#96a2b3;border-top:1px solid var(--line);padding-top:14px;margin-top:14px}.footer{text-align:center;color:#657083;font-size:11px;padding:30px 0}.kbd{font-family:ui-monospace,monospace;border:1px solid #313c50;border-bottom-width:2px;background:#0b111a;padding:2px 5px;border-radius:5px;color:#cdd7e7}.pauseOverlay{position:fixed;inset:0;background:rgba(4,7,11,.92);z-index:50;display:grid;place-items:center;text-align:center;padding:20px}.pauseOverlay .box{max-width:420px}.hint{font-size:12px;color:#8290a4}.subtle{color:#8f9aac}.separator{height:1px;background:var(--line);margin:16px 0}
+@media(max-width:760px){.wrap{padding:14px}.hero,.reportGrid{grid-template-columns:1fr}.heroMain{padding:24px}.side{padding:16px}.battery{grid-template-columns:1fr}.formrow{grid-template-columns:1fr}.questionCard{padding:20px;min-height:500px}.matrixGrid{grid-template-columns:repeat(3,72px)}.cell{width:72px;height:72px}.blockGrid{grid-template-columns:repeat(4,38px)}.blockCell{width:38px;height:38px}.indexRow{grid-template-columns:105px 1fr 44px}.scoreHero{font-size:60px}.symbolRow{grid-template-columns:58px 1fr 72px}.symbols{font-size:19px;letter-spacing:.1em}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"><div class="brand"><div class="mark">C</div><div><b>Cognitive Profile Lab</b><small>Independent cognitive assessment</small></div></div><div class="pill" id="savePill">로컬 저장 · 개인정보 업로드 없음</div></div>
+
+  <main id="homeView">
+    <section class="hero">
+      <div class="card heroMain">
+        <div class="eyebrow"><span class="dot"></span> 종합 인지 프로파일</div>
+        <h1><span class="grad">생각하는 방식</span>을<br>여러 각도에서 측정.</h1>
+        <p class="lead">언어이해, 시공간, 유동추론, 작업기억, 처리속도를 포함한 16개 독립 하위검사. 정답률뿐 아니라 반응시간·기억폭·일관성을 함께 기록합니다.</p>
+        <div class="notice"><b>중요:</b> 이 사이트는 Pearson의 WISC/WAIS 공식 검사나 임상 진단 도구가 아닙니다. 공식 문항과 독점 규준표를 사용하지 않으며, 결과는 교육·자기탐색용 <b>비공식 추정치</b>입니다. “100% 정확한 IQ”는 어떤 온라인 검사도 보장할 수 없습니다.</div>
+        <div class="formrow">
+          <div class="field"><label>닉네임 (선택)</label><input id="nickname" maxlength="24" placeholder="예: tester01"></div>
+          <div class="field"><label>연령</label><select id="age"><option value="">선택</option></select></div>
+        </div>
+        <div class="actions"><button class="btn primary" id="startFull">전체 검사 시작</button><button class="btn secondary" id="continueBtn">이어하기</button><button class="btn ghost" id="resetBtn">기록 초기화</button></div>
+      </div>
+      <aside class="card side">
+        <div class="metric"><strong>16</strong><span>하위검사</span></div>
+        <div class="metric"><strong>5</strong><span>핵심 인지영역</span></div>
+        <div class="metric"><strong>≈ 35–50분</strong><span>전체 검사 예상 소요</span></div>
+        <div class="metric"><strong>Offline</strong><span>브라우저에서만 계산 · 결과 로컬 저장</span></div>
+      </aside>
+    </section>
+    <section class="section">
+      <div class="sectionHead"><div><h2>검사 구성</h2><p>모든 문항은 이 사이트용 독립 문항입니다.</p></div><div style="min-width:220px"><div class="progressbar"><div id="homeProgress"></div></div></div></div>
+      <div class="battery" id="batteryList"></div>
+    </section>
+  </main>
+
+  <main id="testView" class="hidden testShell">
+    <div class="testHeader"><div><div class="indexBadge" id="testDomain"></div><b id="testTitle"></b></div><div class="timer" id="timer">00:00</div></div>
+    <div class="progressbar" style="margin-bottom:14px"><div id="testProgress"></div></div>
+    <section class="card questionCard" id="questionCard"></section>
+  </main>
+
+  <main id="reportView" class="hidden">
+    <div class="sectionHead"><div><h2>인지 프로파일 리포트</h2><p id="reportStamp"></p></div><div class="actions"><button class="btn secondary" id="exportBtn">결과 JSON 저장</button><button class="btn ghost" id="backHomeBtn">검사 목록</button></div></div>
+    <div class="reportGrid">
+      <section class="card reportCard"><div class="subtle">CPL Overall Estimate</div><div class="scoreHero" id="overallScore">—</div><div class="scoreSub" id="overallBand">—</div><div class="separator"></div><svg id="radar" viewBox="0 0 320 280" width="100%" aria-label="인지영역 레이더 차트"></svg></section>
+      <section class="card reportCard"><h3 style="margin-top:0">핵심 영역</h3><div class="indexRows" id="indexRows"></div><div class="separator"></div><h3>해석</h3><div id="interpretation" style="color:#b9c4d3"></div><div class="disclaimer">CPL 점수는 표준화된 임상 IQ가 아니라 이 웹앱 내부 규칙으로 계산한 IQ 유사 척도입니다. 실제 지능검사는 훈련된 전문가가 표준화된 절차와 공식 규준을 사용해 해석해야 합니다.</div></section>
+    </div>
+    <section class="section card reportCard"><h3 style="margin-top:0">하위검사 세부</h3><div id="subtestTable"></div></section>
+  </main>
+  <div class="footer">Cognitive Profile Lab · independent, non-clinical, no affiliation with Pearson</div>
+</div>
+<div id="pauseOverlay" class="pauseOverlay hidden"><div class="box"><h2>검사가 일시중지됨</h2><p class="subtle">시간검사 중 탭이 비활성화되어 측정을 중단했습니다. 돌아오면 계속할 수 있습니다.</p><button class="btn primary" id="resumeBtn">계속</button></div></div>
+<script>
+(() => {
+'use strict';
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const mean=a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:0;
+const now=()=>Date.now();
+const uid=()=>Math.random().toString(36).slice(2,9);
+const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const fmtTime=s=>String(Math.floor(s/60)).padStart(2,'0')+':'+String(Math.floor(s%60)).padStart(2,'0');
+
+const DOMAINS={VCI:'언어이해',VSI:'시공간',FRI:'유동추론',WMI:'작업기억',PSI:'처리속도'};
+const TESTS=[
+{id:'sim',domain:'VCI',title:'공통성 추론',desc:'두 개념의 상위 공통점을 찾습니다.',type:'mcq',questions:[
+['나침반과 지도는 어떤 점에서 가장 비슷한가?',['둘 다 방향·위치 파악을 돕는다','둘 다 전기를 사용한다','둘 다 시간을 측정한다','둘 다 소리를 낸다'],0],
+['비유와 모델의 공통 기능은?',['현실의 구조를 단순화해 이해를 돕는다','항상 정확한 숫자를 낸다','감정을 제거한다','기억을 대신한다'],0],
+['규칙과 알고리즘이 공통으로 하는 일은?',['행동이나 절차를 제약·안내한다','무작위성을 늘린다','언어를 번역한다','물체의 질량을 잰다'],0],
+['가설과 질문의 가장 가까운 공통점은?',['아직 확정되지 않은 탐색을 이끈다','둘 다 반드시 참이다','둘 다 계산식이다','둘 다 과거 사건만 다룬다'],0],
+['은행의 계좌와 컴퓨터의 폴더가 비슷한 점은?',['항목을 구분해 보관·관리하는 구조다','둘 다 종이로만 존재한다','둘 다 금리를 가진다','둘 다 암호화가 필수다'],0],
+['헌법과 소프트웨어의 기본 설정이 비슷한 점은?',['하위 동작의 기본 틀과 제한을 정한다','항상 변경 불가능하다','숫자로만 작성된다','오류를 자동으로 없앤다'],0]]},
+{id:'vocab',domain:'VCI',title:'어휘 의미',desc:'단어 의미를 문맥에서 구분합니다.',type:'mcq',questions:[
+['“잠정적”과 가장 가까운 뜻은?',['임시로 정해진','매우 오래된','명백히 틀린','감정적인'],0],
+['“함축하다”의 뜻은?',['겉으로 직접 말하지 않고 의미를 내포하다','반드시 반박하다','숫자로 계산하다','순서를 뒤집다'],0],
+['“상충하다”의 뜻은?',['서로 맞지 않아 충돌하다','서로 완전히 복제하다','차례대로 저장하다','빠르게 압축하다'],0],
+['“귀납”에 가장 가까운 설명은?',['여러 사례에서 일반 규칙을 추론함','일반 규칙에서 사례를 도출함','감각 정보를 차단함','문장을 소리 내어 읽음'],0],
+['“자의적”의 뜻은?',['객관적 근거보다 자기 판단에 따른','법으로 강제된','물리적으로 고정된','우연히 관측된'],0],
+['“정합성”과 가장 가까운 뜻은?',['서로 모순 없이 들어맞는 정도','속도가 빠른 정도','감정이 강한 정도','희귀한 정도'],0]]},
+{id:'info',domain:'VCI',title:'언어·일반 추론',desc:'상식 암기보다 문맥 이해와 개념 적용을 봅니다.',type:'mcq',questions:[
+['어떤 주장에 “반례” 하나가 발견되었다. 가장 직접적으로 알 수 있는 것은?',['그 주장이 보편명제라면 거짓일 수 있다','그 주장은 반드시 참이다','반례가 주장을 증명한다','아무 의미가 없다'],0],
+['측정값이 매번 조금씩 달라질 때 가장 합리적인 대응은?',['반복 측정해 변동을 추정한다','첫 값만 사용한다','가장 큰 값만 고른다','결과를 버린다'],0],
+['두 변수의 상관이 높다는 사실만으로 말할 수 없는 것은?',['한 변수가 다른 변수의 원인이라는 결론','함께 변하는 경향이 있다는 것','추가 검증이 필요하다는 것','제3변수 가능성이 있다는 것'],0],
+['정의가 너무 넓어서 원치 않는 사례까지 포함할 때 필요한 수정은?',['필요한 조건을 추가해 범위를 좁힌다','예시를 모두 삭제한다','단어 수만 늘린다','반드시 수식으로 바꾼다'],0],
+['자료를 요약할 때 평균 하나만 보면 위험한 이유는?',['분포와 극단값 정보를 놓칠 수 있어서','평균은 항상 틀리므로','평균은 정수만 가능해서','표본에는 쓸 수 없어서'],0]]},
+{id:'block',domain:'VSI',title:'블록 패턴',desc:'격자 패턴을 회전·재구성해 같은 구조를 찾습니다.',type:'block'},
+{id:'vp',domain:'VSI',title:'시각 퍼즐',desc:'조각의 결합과 회전을 머릿속에서 조작합니다.',type:'mcq',questions:[
+['정사각형을 대각선 하나로 자르면 같은 크기의 어떤 도형 2개가 되는가?',['직각이등변삼각형','정육각형','원','오각형'],0],
+['정육면체의 서로 마주보는 면은 동시에 한 꼭짓점에서 만날 수 있는가?',['없다','항상 만난다','두 면만 가능하다','크기에 따라 다르다'],0],
+['L자 블록을 180° 회전했을 때 변하지 않는 것은?',['각 변의 길이와 연결관계','화면 위 절대 위치','위쪽 방향','왼쪽/오른쪽의 의미'],0],
+['3×3 정사각형 격자에서 가운데 칸만 제거했다. 남은 도형의 대칭축 수는?',['4개','0개','1개','8개'],0],
+['같은 크기 정사각형 4개로 만들 수 없는 것은?',['정확한 정삼각형','2×2 정사각형','일자 막대','L자'],0]]},
+{id:'matrix',domain:'FRI',title:'행렬 추론',desc:'반복·증가·교대 규칙을 찾아 빈칸을 채웁니다.',type:'matrix'},
+{id:'weights',domain:'FRI',title:'양적 균형',desc:'기호 간 등가관계에서 미지 값을 추론합니다.',type:'mcq',questions:[
+['▲+▲=12, ▲+●=10. ●=?',['4','5','6','8'],0],
+['■=2●, ■+●=15. ■=?',['10','8','12','6'],0],
+['2◆+□=14, ◆=5. □=?',['4','9','2','7'],0],
+['○+△=9, △+△=10. ○=?',['4','5','3','1'],0],
+['A=3B, A+B=20. B=?',['5','4','6','10'],0],
+['x+y=17, x-y=5. x=?',['11','6','12','10'],0]]},
+{id:'setrel',domain:'FRI',title:'집합 관계',desc:'분류·포함·배타 관계를 추론합니다.',type:'mcq',questions:[
+['모든 R은 S이고 어떤 S는 T다. 반드시 참인 것은?',['모든 R은 S다','어떤 R은 T다','모든 T는 R이다','R과 T는 반드시 겹친다'],0],
+['A와 B가 서로 배타적이고 x가 A에 속한다. 무엇을 알 수 있는가?',['x는 B에 속하지 않는다','x는 반드시 C에 속한다','B는 비어 있다','A와 B의 크기는 같다'],0],
+['모든 고래는 포유류이고 어떤 포유류는 육지동물이다. “어떤 고래는 육지동물이다”는?',['결론 낼 수 없다','반드시 참','반드시 거짓','정의상 참'],0],
+['집합 P⊂Q이고 Q⊂R이면?',['P⊂R','R⊂P','P와R은 배타적','Q는 공집합'],0],
+['A∩B=∅의 뜻은?',['공통 원소가 없다','A와B가 같다','A가B를 포함한다','둘 다 공집합이다'],0]]},
+{id:'digit',domain:'WMI',title:'숫자 순서 기억',desc:'숫자열을 보고 그대로·거꾸로·정렬해 재현합니다.',type:'digit'},
+{id:'running',domain:'WMI',title:'Running Digits 스타일',desc:'길게 제시되는 숫자 중 마지막 일부만 유지합니다.',type:'running'},
+{id:'spatial',domain:'WMI',title:'공간 순서 기억',desc:'격자 위치가 켜지는 순서를 기억합니다.',type:'spatial'},
+{id:'symbolspan',domain:'WMI',title:'기호 순서 기억',desc:'문자 대신 기호열의 순서를 유지합니다.',type:'symbolspan'},
+{id:'arith',domain:'WMI',title:'암산 추론',desc:'짧은 문장 문제를 머릿속에서 계산합니다.',type:'mcq',questions:[
+['12개를 3명에게 똑같이 나누면 한 명당 몇 개인가?',['4','3','5','6'],0],
+['어떤 수의 25%가 9라면 그 수는?',['36','27','45','18'],0],
+['시속 60km로 30분 이동하면 몇 km인가?',['30','60','20','45'],0],
+['3개에 7,500원인 물건을 같은 단가로 8개 사면?',['20,000원','18,000원','22,500원','15,000원'],0],
+['연속된 세 정수의 합이 72다. 가운데 수는?',['24','23','25','22'],0],
+['A는 B보다 6살 많고 두 사람 나이 합이 34다. B는?',['14','20','17','11'],0]]},
+{id:'symsearch',domain:'PSI',title:'기호 탐색',desc:'제한시간에 표적 기호의 존재 여부를 빠르게 판단합니다.',type:'symsearch'},
+{id:'coding',domain:'PSI',title:'기호 코딩',desc:'숫자-기호 규칙을 적용해 빠르게 변환합니다.',type:'coding'},
+{id:'nameqty',domain:'PSI',title:'수량 명명 속도',desc:'작은 수량을 빠르고 정확하게 식별합니다.',type:'nameqty'}
+];
+
+const state={profile:{nickname:'',age:null},results:{},active:null,startedAt:null,interruptions:0};
+let runtime={timerId:null,start:0,pausedMs:0,pauseStart:0,idx:0,answers:[],meta:{},sequence:[],phase:'',lock:false};
+const STORAGE='cpl-v1';
+
+function save(){localStorage.setItem(STORAGE,JSON.stringify(state));updateHome();}
+function load(){try{const s=JSON.parse(localStorage.getItem(STORAGE)||'null');if(s&&s.results){Object.assign(state,s)}}catch(e){} updateHome();}
+function reset(){localStorage.removeItem(STORAGE);state.profile={nickname:'',age:null};state.results={};state.active=null;state.startedAt=null;state.interruptions=0;$('#nickname').value='';$('#age').value='';updateHome();show('home');}
+function show(which){$('#homeView').classList.toggle('hidden',which!=='home');$('#testView').classList.toggle('hidden',which!=='test');$('#reportView').classList.toggle('hidden',which!=='report');window.scrollTo({top:0,behavior:'smooth'});}
+function ageBand(age){if(age<=8)return '6–8'; if(age<=11)return '9–11'; if(age<=16)return '12–16'; if(age<=24)return '17–24'; if(age<=39)return '25–39'; if(age<=54)return '40–54'; return '55+';}
+
+function initAges(){const sel=$('#age');for(let a=6;a<=80;a++){const o=document.createElement('option');o.value=a;o.textContent=a+'세';sel.appendChild(o)}}
+function updateHome(){
+ const done=Object.keys(state.results).length; $('#homeProgress').style.width=(done/TESTS.length*100)+'%';
+ $('#continueBtn').disabled=done===0&& !state.active;
+ $('#batteryList').innerHTML=TESTS.map((t,i)=>{const r=state.results[t.id];return `<div class="card testCard"><div class="testIcon">${String(i+1).padStart(2,'0')}</div><div class="testMeta"><b>${t.title}</b><small>${DOMAINS[t.domain]} · ${t.desc}</small></div><span class="status ${r?'done':''}">${r?'완료':state.active===t.id?'진행중':'대기'}</span></div>`}).join('');
+ if(state.profile.nickname)$('#nickname').value=state.profile.nickname;if(state.profile.age)$('#age').value=state.profile.age;
+}
+
+function startBattery(){
+ const age=+$('#age').value;if(!age){alert('연령을 선택해 주세요.');return}
+ state.profile={nickname:$('#nickname').value.trim(),age}; state.startedAt=state.startedAt||new Date().toISOString(); save(); startNext();
+}
+function startNext(){const next=TESTS.find(t=>!state.results[t.id]); if(!next){renderReport();return} startTest(next.id)}
+function startTest(id){
+ const t=TESTS.find(x=>x.id===id); if(!t)return; state.active=id;save();
+ runtime={timerId:null,start:now(),pausedMs:0,pauseStart:0,idx:0,answers:[],meta:{},sequence:[],phase:'',lock:false};
+ $('#testDomain').textContent=DOMAINS[t.domain];$('#testTitle').textContent=t.title;show('test');startTimer();
+ renderIntro(t);
+}
+function startTimer(){clearInterval(runtime.timerId);runtime.timerId=setInterval(()=>{$('#timer').textContent=fmtTime(Math.max(0,(now()-runtime.start-runtime.pausedMs)/1000))},250)}
+function elapsed(){return (now()-runtime.start-runtime.pausedMs)/1000}
+function setProgress(v){$('#testProgress').style.width=(clamp(v,0,1)*100)+'%'}
+function renderIntro(t){setProgress(0);$('#questionCard').innerHTML=`<div><div class="indexBadge">${DOMAINS[t.domain]} · ${t.id.toUpperCase()}</div><h2>${t.title}</h2><p>${t.desc}</p><div class="notice" style="margin-top:18px">가능하면 조용한 환경에서 도움 없이 진행하세요. 시간 기반 검사에서는 속도와 정확도를 함께 기록합니다.</div><div class="actions" style="margin-top:24px"><button class="btn primary" id="beginTest">시작</button><button class="btn ghost" id="exitTest">나가기</button></div></div>`;$('#beginTest').onclick=()=>beginType(t);$('#exitTest').onclick=()=>show('home')}
+function beginType(t){runtime.start=now();runtime.idx=0;runtime.answers=[];runtime.meta={latencies:[]}; if(t.type==='mcq')renderMCQ(t);else if(t.type==='block')renderBlock(t);else if(t.type==='matrix')renderMatrix(t);else if(t.type==='digit')startDigit(t);else if(t.type==='running')startRunning(t);else if(t.type==='spatial')startSpatial(t);else if(t.type==='symbolspan')startSymbolSpan(t);else if(t.type==='symsearch')startSymSearch(t);else if(t.type==='coding')startCoding(t);else if(t.type==='nameqty')startNameQty(t)}
+
+function renderMCQ(t){const q=t.questions[runtime.idx];if(!q)return finishStatic(t);runtime.meta.qStart=now();setProgress(runtime.idx/t.questions.length);$('#questionCard').innerHTML=`<div class="indexBadge">문항 ${runtime.idx+1} / ${t.questions.length}</div><div class="prompt">${q[0]}</div><div class="options">${q[1].map((o,i)=>`<button class="option" data-i="${i}">${String.fromCharCode(65+i)}. ${o}</button>`).join('')}</div><div class="hint" style="margin-top:16px">가장 적절한 하나를 선택하세요.</div>`;$$('.option').forEach(b=>b.onclick=()=>{runtime.answers.push(+b.dataset.i===q[2]?1:0);runtime.meta.latencies.push((now()-runtime.meta.qStart)/1000);runtime.idx++;renderMCQ(t)})}
+function finishStatic(t){const correct=runtime.answers.reduce((a,b)=>a+b,0);completeTest(t,{raw:correct,max:runtime.answers.length,accuracy:correct/runtime.answers.length,time:elapsed(),latency:mean(runtime.meta.latencies),detail:{latencies:runtime.meta.latencies}})}
+
+const BLOCKS=[
+{a:'1000110011000000',opts:['0000001111001100','0011001100110000','1100110000001100','1000110011000000'],ans:3,rot:'same'},
+{a:'1100010001000111',opts:['1110001000100011','0111001000101100','1110010001000011','1100010001000111'],ans:0,rot:'180'},
+{a:'1000100011111000',opts:['0010001011100010','0001111110000000','1111000100010001','1000100011111000'],ans:2,rot:'90'},
+{a:'0110011010001000',opts:['0001000101100110','1000100001100110','0110011000010001','0110011010001000'],ans:0,rot:'180'},
+{a:'1110100010001000',opts:['0001000100010111','1110001000100010','1000100010001110','1110100010001000'],ans:0,rot:'180'}];
+function gridHTML(s){return `<div class="blockGrid">${[...s].map(c=>`<div class="blockCell ${c==='1'?'on':''}"></div>`).join('')}</div>`}
+function renderBlock(t){const q=BLOCKS[runtime.idx];if(!q)return finishGeneric(t,BLOCKS.length);runtime.meta.qStart=now();setProgress(runtime.idx/BLOCKS.length);$('#questionCard').innerHTML=`<div class="indexBadge">패턴 ${runtime.idx+1} / ${BLOCKS.length}</div><div class="prompt" style="text-align:center">아래 패턴을 머릿속으로 회전했을 때 같은 구조를 고르세요.</div>${gridHTML(q.a)}<div class="options">${q.opts.map((o,i)=>`<button class="option" data-i="${i}"><b>${String.fromCharCode(65+i)}</b>${gridHTML(o)}</button>`).join('')}</div>`;$$('.option').forEach(b=>b.onclick=()=>{runtime.answers.push(+b.dataset.i===q.ans?1:0);runtime.meta.latencies.push((now()-runtime.meta.qStart)/1000);runtime.idx++;renderBlock(t)})}
+
+const MATRIX=[
+{cells:['○','●','○','●','○','●','○','●','?'],opts:['○','●','▲','■'],ans:0},
+{cells:['▲','▲▲','▲▲▲','■','■■','■■■','●','●●','?'],opts:['●●●','●●','●','○○○'],ans:0},
+{cells:['○','△','□','△','□','○','□','○','?'],opts:['△','□','○','◇'],ans:0},
+{cells:['1','2','4','2','4','8','3','6','?'],opts:['9','10','12','18'],ans:2},
+{cells:['↑','→','↓','→','↓','←','↓','←','?'],opts:['↑','→','↓','←'],ans:0},
+{cells:['2','3','5','4','6','10','6','9','?'],opts:['12','15','18','21'],ans:1}];
+function renderMatrix(t){const q=MATRIX[runtime.idx];if(!q)return finishGeneric(t,MATRIX.length);runtime.meta.qStart=now();setProgress(runtime.idx/MATRIX.length);$('#questionCard').innerHTML=`<div class="indexBadge">행렬 ${runtime.idx+1} / ${MATRIX.length}</div><div class="prompt" style="text-align:center">빈칸의 규칙을 완성하세요.</div><div class="matrixGrid">${q.cells.map(c=>`<div class="cell">${c}</div>`).join('')}</div><div class="options">${q.opts.map((o,i)=>`<button class="option" data-i="${i}">${String.fromCharCode(65+i)}. <b style="font-size:24px">${o}</b></button>`).join('')}</div>`;$$('.option').forEach(b=>b.onclick=()=>{runtime.answers.push(+b.dataset.i===q.ans?1:0);runtime.meta.latencies.push((now()-runtime.meta.qStart)/1000);runtime.idx++;renderMatrix(t)})}
+function finishGeneric(t,max){const correct=runtime.answers.reduce((a,b)=>a+b,0);completeTest(t,{raw:correct,max,accuracy:correct/max,time:elapsed(),latency:mean(runtime.meta.latencies),detail:{latencies:runtime.meta.latencies}})}
+
+async function flashSequence(seq,renderToken,gap=720){runtime.lock=true;for(const x of seq){renderToken(x,true);await sleep(gap*.72);renderToken(x,false);await sleep(gap*.28)}runtime.lock=false}
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+function startDigit(t){runtime.meta.trials=[];runtime.idx=0;nextDigitTrial(t)}
+function nextDigitTrial(t){const levels=[{len:3,mode:'forward'},{len:4,mode:'forward'},{len:4,mode:'reverse'},{len:5,mode:'reverse'},{len:5,mode:'sort'},{len:6,mode:'sort'},{len:7,mode:'forward'}];if(runtime.idx>=levels.length)return finishMemory(t,levels.length);const L=levels[runtime.idx],seq=Array.from({length:L.len},()=>Math.floor(Math.random()*9)+1),target=L.mode==='forward'?seq.join(''):L.mode==='reverse'?[...seq].reverse().join(''):[...seq].sort().join('');setProgress(runtime.idx/levels.length);$('#questionCard').innerHTML=`<div class="indexBadge">기억 시행 ${runtime.idx+1} / ${levels.length}</div><div class="prompt" style="text-align:center">${L.mode==='forward'?'본 순서 그대로':L.mode==='reverse'?'거꾸로':'작은 수부터 정렬해서'} 입력하세요.</div><div class="memoryStage"><div class="memoryToken" id="memToken">준비</div></div>`;sleep(600).then(()=>flashSequence(seq,x=>{$('#memToken').textContent=x},680)).then(()=>{runtime.meta.qStart=now();$('#questionCard').innerHTML=`<div class="indexBadge">응답</div><div class="prompt" style="text-align:center">${L.mode==='forward'?'그대로':L.mode==='reverse'?'거꾸로':'오름차순으로'} 입력</div><input class="memoryInput" id="memInput" inputmode="numeric" autofocus><div class="actions" style="justify-content:center"><button class="btn primary" id="memSubmit">확인</button></div>`;const submit=()=>{const v=$('#memInput').value.replace(/\D/g,'');runtime.answers.push(v===target?1:0);runtime.meta.latencies.push((now()-runtime.meta.qStart)/1000);runtime.meta.trials.push({len:L.len,mode:L.mode,correct:v===target});runtime.idx++;nextDigitTrial(t)};$('#memSubmit').onclick=submit;$('#memInput').onkeydown=e=>{if(e.key==='Enter')submit()};$('#memInput').focus()})}
+function finishMemory(t,max){const raw=runtime.answers.reduce((a,b)=>a+b,0);const span=Math.max(0,...runtime.meta.trials.filter(x=>x.correct).map(x=>x.len));completeTest(t,{raw,max,accuracy:raw/max,time:elapsed(),span,latency:mean(runtime.meta.latencies),detail:{trials:runtime.meta.trials}})}
+
+function startRunning(t){runtime.meta.trials=[];runtime.idx=0;nextRunning(t)}
+function nextRunning(t){const lens=[6,7,8,9,10,11];if(runtime.idx>=lens.length)return finishMemory(t,lens.length);const n=lens[runtime.idx],keep=3+(runtime.idx>2?1:0),seq=Array.from({length:n},()=>Math.floor(Math.random()*10)),target=seq.slice(-keep).join('');setProgress(runtime.idx/lens.length);$('#questionCard').innerHTML=`<div class="indexBadge">시행 ${runtime.idx+1} / ${lens.length}</div><div class="prompt" style="text-align:center">연속 숫자를 보고 <b>마지막 ${keep}개</b>만 기억하세요.</div><div class="memoryStage"><div class="memoryToken" id="memToken">준비</div></div>`;sleep(500).then(()=>flashSequence(seq,x=>{$('#memToken').textContent=x},520)).then(()=>{runtime.meta.qStart=now();$('#questionCard').innerHTML=`<div class="prompt" style="text-align:center">마지막 ${keep}개 숫자</div><input class="memoryInput" id="memInput" inputmode="numeric" maxlength="${keep}"><div class="actions" style="justify-content:center"><button class="btn primary" id="memSubmit">확인</button></div>`;const submit=()=>{const v=$('#memInput').value.replace(/\D/g,'');runtime.answers.push(v===target?1:0);runtime.meta.latencies.push((now()-runtime.meta.qStart)/1000);runtime.meta.trials.push({len:n,keep,correct:v===target});runtime.idx++;nextRunning(t)};$('#memSubmit').onclick=submit;$('#memInput').onkeydown=e=>{if(e.key==='Enter')submit()};$('#memInput').focus()})}
+
+function startSpatial(t){runtime.meta.trials=[];runtime.idx=0;nextSpatial(t)}
+function nextSpatial(t){const lens=[3,3,4,4,5,6];if(runtime.idx>=lens.length)return finishMemory(t,lens.length);const len=lens[runtime.idx];let seq=[];while(seq.length<len){const x=Math.floor(Math.random()*12);if(seq[seq.length-1]!==x)seq.push(x)}setProgress(runtime.idx/lens.length);$('#questionCard').innerHTML=`<div class="indexBadge">공간 기억 ${runtime.idx+1} / ${lens.length}</div><div class="prompt" style="text-align:center">불이 켜지는 위치의 순서를 기억하세요.</div><div class="spatialBoard" id="spatialBoard">${Array.from({length:12},(_,i)=>`<div class="spatialDot" data-i="${i}"></div>`).join('')}</div>`;runtime.lock=true;sleep(600).then(async()=>{for(const x of seq){const el=$(`.spatialDot[data-i="${x}"]`);el.classList.add('flash');await sleep(420);el.classList.remove('flash');await sleep(170)}runtime.lock=false;let chosen=[];runtime.meta.qStart=now();$$('.spatialDot').forEach(el=>el.onclick=()=>{if(runtime.lock)return;chosen.push(+el.dataset.i);el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),120);if(chosen.length===seq.length){const ok=chosen.every((v,i)=>v===seq[i]);runtime.answers.push(ok?1:0);runtime.meta.latencies.push((now()-runtime.meta.qStart)/1000);runtime.meta.trials.push({len,correct:ok});runtime.idx++;setTimeout(()=>nextSpatial(t),240)}})})}
+
+function startSymbolSpan(t){runtime.meta.trials=[];runtime.idx=0;nextSymbolSpan(t)}
+function nextSymbolSpan(t){const pool=['◆','●','▲','■','✦','⬟','✚','◐'];const lens=[3,4,4,5,5,6];if(runtime.idx>=lens.length)return finishMemory(t,lens.length);const len=lens[runtime.idx],seq=shuffle(pool).slice(0,len),target=seq.join('');setProgress(runtime.idx/lens.length);$('#questionCard').innerHTML=`<div class="indexBadge">기호 기억 ${runtime.idx+1} / ${lens.length}</div><div class="prompt" style="text-align:center">기호의 순서를 기억하세요.</div><div class="memoryStage"><div class="memoryToken" id="memToken">준비</div></div>`;sleep(500).then(()=>flashSequence(seq,x=>{$('#memToken').textContent=x},620)).then(()=>{const opts=shuffle(seq);let chosen=[];runtime.meta.qStart=now();$('#questionCard').innerHTML=`<div class="prompt" style="text-align:center">본 순서대로 기호를 누르세요.</div><div class="options" style="grid-template-columns:repeat(${Math.min(4,len)},1fr)">${opts.map(x=>`<button class="option symPick" data-v="${x}" style="text-align:center;font-size:28px">${x}</button>`).join('')}</div><div class="hint" id="picked" style="text-align:center;margin-top:12px">선택: —</div>`;$$('.symPick').forEach(b=>b.onclick=()=>{chosen.push(b.dataset.v);b.disabled=true;$('#picked').textContent='선택: '+chosen.join(' ');if(chosen.length===len){const ok=chosen.join('')===target;runtime.answers.push(ok?1:0);runtime.meta.latencies.push((now()-runtime.meta.qStart)/1000);runtime.meta.trials.push({len,correct:ok});runtime.idx++;setTimeout(()=>nextSymbolSpan(t),350)}})})}
+
+function startSymSearch(t){runtime.idx=0;runtime.answers=[];runtime.meta.latencies=[];runtime.meta.deadline=now()+45000;nextSymSearch(t)}
+function nextSymSearch(t){if(now()>=runtime.meta.deadline||runtime.idx>=30)return finishTimed(t,30);const chars=['◆','●','▲','■','✦','⬟','✚','◐','◇','○','△','□'];const targets=shuffle(chars).slice(0,2);let row=shuffle(chars).slice(0,5);const present=Math.random()<.5;if(present)row[Math.floor(Math.random()*row.length)]=targets[Math.floor(Math.random()*2)];const correct=present?'yes':'no';runtime.meta.qStart=now();setProgress(1-(runtime.meta.deadline-now())/45000);$('#questionCard').innerHTML=`<div class="indexBadge">45초 제한 · 처리 ${runtime.idx}개</div><div class="symbolRow"><div class="symbols"><b>${targets.join(' ')}</b></div><div class="symbols">${row.join(' ')}</div><div class="yesno"><button class="btn secondary" data-v="yes">있음</button><button class="btn secondary" data-v="no">없음</button></div></div><div class="hint" style="margin-top:16px;text-align:center">왼쪽 표적 중 하나라도 오른쪽에 있으면 ‘있음’</div>`;$$('[data-v]').forEach(b=>b.onclick=()=>{runtime.answers.push(b.dataset.v===correct?1:0);runtime.meta.latencies.push((now()-runtime.meta.qStart)/1000);runtime.idx++;nextSymSearch(t)})}
+function finishTimed(t,maxCap){const raw=runtime.answers.reduce((a,b)=>a+b,0),attempted=runtime.answers.length,acc=attempted?raw/attempted:0;completeTest(t,{raw,max:maxCap,attempted,accuracy:acc,time:elapsed(),latency:mean(runtime.meta.latencies),speed:attempted/detailSeconds(t),detail:{latencies:runtime.meta.latencies}})}
+function detailSeconds(t){return t.id==='symsearch'?45:t.id==='coding'?60:45}
+
+function startCoding(t){runtime.idx=0;runtime.answers=[];runtime.meta.latencies=[];runtime.meta.deadline=now()+60000;runtime.meta.map={'◆':1,'●':2,'▲':3,'■':4,'✦':5,'⬟':6,'✚':7,'◐':8,'◇':9};nextCoding(t)}
+function nextCoding(t){if(now()>=runtime.meta.deadline||runtime.idx>=40)return finishTimed(t,40);const keys=Object.keys(runtime.meta.map),sym=keys[Math.floor(Math.random()*keys.length)],correct=runtime.meta.map[sym];runtime.meta.qStart=now();setProgress(1-(runtime.meta.deadline-now())/60000);$('#questionCard').innerHTML=`<div class="indexBadge">60초 제한 · 처리 ${runtime.idx}개</div><div class="codingKey">${keys.slice(0,5).map(k=>`<div class="keyitem">${k}<br><b>${runtime.meta.map[k]}</b></div>`).join('')}</div><div class="codingKey" style="grid-template-columns:repeat(4,1fr)">${keys.slice(5).map(k=>`<div class="keyitem">${k}<br><b>${runtime.meta.map[k]}</b></div>`).join('')}</div><div class="codePrompt">${sym}</div><div class="options" style="grid-template-columns:repeat(5,1fr)">${[1,2,3,4,5,6,7,8,9].map(n=>`<button class="option" data-n="${n}" style="text-align:center">${n}</button>`).join('')}</div>`;$$('[data-n]').forEach(b=>b.onclick=()=>{runtime.answers.push(+b.dataset.n===correct?1:0);runtime.meta.latencies.push((now()-runtime.meta.qStart)/1000);runtime.idx++;nextCoding(t)})}
+
+function startNameQty(t){runtime.idx=0;runtime.answers=[];runtime.meta.latencies=[];runtime.meta.deadline=now()+45000;nextNameQty(t)}
+function nextNameQty(t){if(now()>=runtime.meta.deadline||runtime.idx>=30)return finishTimed(t,30);const n=1+Math.floor(Math.random()*7),sym=['●','▲','■','◆'][Math.floor(Math.random()*4)],items=Array(n).fill(sym).join(' ');runtime.meta.qStart=now();setProgress(1-(runtime.meta.deadline-now())/45000);const opts=shuffle([n,clamp(n+1,1,9),clamp(n-1,1,9),clamp(n+2,1,9)]).filter((v,i,a)=>a.indexOf(v)===i);while(opts.length<4){const x=1+Math.floor(Math.random()*9);if(!opts.includes(x))opts.push(x)}$('#questionCard').innerHTML=`<div class="indexBadge">45초 제한 · 처리 ${runtime.idx}개</div><div class="memoryStage"><div class="memoryToken" style="font-size:38px;letter-spacing:.2em">${items}</div></div><div class="options" style="grid-template-columns:repeat(4,1fr)">${opts.map(x=>`<button class="option" data-n="${x}" style="text-align:center;font-size:22px">${x}</button>`).join('')}</div>`;$$('[data-n]').forEach(b=>b.onclick=()=>{runtime.answers.push(+b.dataset.n===n?1:0);runtime.meta.latencies.push((now()-runtime.meta.qStart)/1000);runtime.idx++;nextNameQty(t)})}
+
+function scoreTest(t,r){
+ let p=0;
+ if(['symsearch','coding','nameqty'].includes(t.id)){
+   const speedNorm={symsearch:22,coding:26,nameqty:24}[t.id]; const speedPart=clamp((r.attempted||0)/speedNorm,0,1.25); p=(.62*r.accuracy+.38*speedPart);
+ }else if(['digit','running','spatial','symbolspan'].includes(t.id)){
+   p=.78*r.accuracy+.22*clamp((r.span||3)/6,0,1.2);
+ }else{
+   const pace=clamp(1-(Math.max(0,(r.latency||8)-12)/45),.72,1.08);p=r.accuracy*pace;
+ }
+ // tiny broad-age developmental correction only; never clinical norms
+ const age=state.profile.age||17; let adj=1; if(age<=8)adj=1.09; else if(age<=11)adj=1.05; else if(age<=16)adj=1.02; else if(age>=55)adj=1.05; else if(age>=40)adj=1.02;
+ p=clamp(p*adj,0,1.18);
+ const scaled=clamp(1+18*p,1,19);
+ return {performance:p,scaled:+scaled.toFixed(1)};
+}
+function completeTest(t,r){clearInterval(runtime.timerId);const sc=scoreTest(t,r);state.results[t.id]={...r,...sc,completedAt:new Date().toISOString(),interruptions:state.interruptions};state.active=null;save();$('#questionCard').innerHTML=`<div style="text-align:center"><div class="eyebrow"><span class="dot"></span> 완료</div><h2>${t.title}</h2><p>원점수 ${r.raw}/${r.max}${r.attempted!=null?` · 시도 ${r.attempted}`:''}</p><div class="actions" style="justify-content:center"><button class="btn primary" id="nextTest">다음 검사</button><button class="btn ghost" id="homeAfter">목록</button></div></div>`;setProgress(1);$('#nextTest').onclick=startNext;$('#homeAfter').onclick=()=>show('home')}
+
+function composites(){const out={};for(const d of Object.keys(DOMAINS)){const rs=TESTS.filter(t=>t.domain===d).map(t=>state.results[t.id]?.scaled).filter(Boolean);if(rs.length)out[d]=clamp(100+(mean(rs)-10)*5,55,145)}const vals=Object.values(out);const overall=vals.length?clamp(Math.round(mean(vals)),55,145):null;return {indices:out,overall}}
+function band(s){if(s>=130)return '매우 높은 범위';if(s>=120)return '높은 범위';if(s>=110)return '평균 상';if(s>=90)return '평균 범위';if(s>=80)return '평균 하';if(s>=70)return '낮은 범위';return '매우 낮은 범위'}
+function renderReport(){clearInterval(runtime.timerId);const c=composites();show('report');$('#reportStamp').textContent=`${state.profile.nickname?state.profile.nickname+' · ':''}${state.profile.age||'?'}세 (${ageBand(state.profile.age||17)}) · ${new Date().toLocaleString('ko-KR')}`;$('#overallScore').textContent=c.overall??'—';$('#overallBand').textContent=c.overall?band(c.overall):'완료된 검사가 부족합니다';$('#indexRows').innerHTML=Object.entries(DOMAINS).map(([k,v])=>{const s=Math.round(c.indices[k]||0);return `<div class="indexRow"><span>${v}</span><div class="miniBar"><i style="width:${c.indices[k]?clamp((s-55)/90*100,0,100):0}%"></i></div><b>${c.indices[k]?s:'—'}</b></div>`}).join('');
+ const pairs=Object.entries(c.indices).sort((a,b)=>b[1]-a[1]);let txt='';if(pairs.length>=2){const hi=pairs[0],lo=pairs[pairs.length-1],gap=Math.round(hi[1]-lo[1]);txt=`현재 내부 척도에서는 <b>${DOMAINS[hi[0]]}</b>이 가장 높은 편이고, <b>${DOMAINS[lo[0]]}</b>이 상대적으로 낮습니다. 영역 간 차이는 약 <b>${gap}점</b>입니다. 이 차이는 “능력의 고정된 서열”이 아니라 과제 유형·집중·속도·피로의 영향을 함께 받습니다.`}else txt='더 많은 하위검사를 완료하면 영역별 비교가 표시됩니다.';$('#interpretation').innerHTML=txt;
+ $('#subtestTable').innerHTML=TESTS.map(t=>{const r=state.results[t.id];return `<div class="indexRow" style="grid-template-columns:180px 1fr 90px;padding:8px 0;border-bottom:1px solid #1d2634"><span><b>${t.title}</b><br><small class="subtle">${DOMAINS[t.domain]}</small></span><div class="miniBar"><i style="width:${r?clamp((r.scaled-1)/18*100,0,100):0}%"></i></div><span style="text-align:right">${r?`척도 ${r.scaled}<br><small class="subtle">${Math.round(r.accuracy*100)}%</small>`:'미완료'}</span></div>`}).join('');drawRadar(c.indices)}
+function drawRadar(indices){const svg=$('#radar'),keys=Object.keys(DOMAINS),cx=160,cy=140,R=102;const pt=(i,r)=>{const a=-Math.PI/2+i*2*Math.PI/keys.length;return [cx+Math.cos(a)*r,cy+Math.sin(a)*r]};let html='';for(const frac of [.25,.5,.75,1]){html+=`<polygon points="${keys.map((_,i)=>pt(i,R*frac).join(',')).join(' ')}" fill="none" stroke="#263147" stroke-width="1"/>`}keys.forEach((k,i)=>{const [x,y]=pt(i,R);const [lx,ly]=pt(i,R+24);html+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="#202b3d"/><text x="${lx}" y="${ly}" fill="#9eabbd" font-size="11" text-anchor="middle">${DOMAINS[k]}</text>`});const points=keys.map((k,i)=>{const s=indices[k]||55;const rr=R*clamp((s-55)/90,0,1);return pt(i,rr).join(',')}).join(' ');html+=`<polygon points="${points}" fill="rgba(124,156,255,.20)" stroke="#8ba6ff" stroke-width="2"/>`;svg.innerHTML=html}
+
+function exportJSON(){const blob=new Blob([JSON.stringify({app:'Cognitive Profile Lab',version:1,profile:state.profile,results:state.results,composites:composites(),note:'Non-clinical independent estimate; not WISC/WAIS norms.'},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='cognitive-profile-'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+
+document.addEventListener('visibilitychange',()=>{if(!$('#testView').classList.contains('hidden')){if(document.hidden){runtime.pauseStart=now();clearInterval(runtime.timerId);$('#pauseOverlay').classList.remove('hidden');state.interruptions++} }});$('#resumeBtn').onclick=()=>{if(runtime.pauseStart){runtime.pausedMs+=now()-runtime.pauseStart;runtime.pauseStart=0}$('#pauseOverlay').classList.add('hidden');startTimer()};
+$('#startFull').onclick=startBattery;$('#continueBtn').onclick=()=>{if(state.active)startTest(state.active);else startNext()};$('#resetBtn').onclick=()=>{if(confirm('모든 검사 기록을 초기화할까요?'))reset()};$('#exportBtn').onclick=exportJSON;$('#backHomeBtn').onclick=()=>show('home');
+initAges();load();
+if(Object.keys(state.results).length===TESTS.length)$('#continueBtn').textContent='결과 보기';
+})();
+</script>
+</body>
+</html>
